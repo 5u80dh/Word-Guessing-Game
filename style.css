@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+
+  }
+  
+  #game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/pink-flowers.jpg"); /* Replace with your desired image */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  #hidden-word {
+    font-size: 1.5em;
+  }
+  
+  #chances {
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  #letter-input {
+    font-size: 2em;
+    padding: 10px;
+    border: 1px solid #040000;
+    border-radius: 5px;
+    width: 150px; /* adjust width as needed */
+    text-align: center;
+  }
+
+   #feedback {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px #333;
+    background-image: linear-gradient(45deg, #ff9900, #ffcc99);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: purple;
+    color: #fff;
+    border: 1px purple solid;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+  }
+  
+#guessBtn:focus {
+    outline: none;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+    
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
+
+ 
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Guess!</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="text">Starting...</h1> 
+  <div id="game-board">
+    <p id="hidden-word">_ _ _ _ _</p>
+    <p id="chances">Chances remaining: 5</p>
+    <input type="text" id="letter-input" maxlength="1">
+    <p id="word-length">Word Length: <span id="word-length-value">0</span></p>
+    <button id="guess-btn">Guess!</button>
+    <button id="retry-btn">Retry!</button>
+    <p id="feedback"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
