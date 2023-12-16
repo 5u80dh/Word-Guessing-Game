@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
+#body {
     font-family: sans-serif;
     margin: 20px;
 
@@ -11,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("/images/pink-flowers.jpg"); /* Replace with your desired image */
+    background-image: url("bg.jpg"); /* Replace with your desired image */
     padding: 20px;
     border-radius: 5px;
   }
