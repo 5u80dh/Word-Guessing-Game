@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("bg.jpg"); /* Replace with your desired image */
+    background-image: url("https://img.freepik.com/free-vector/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.jpg?w=826&t=st=1702742056~exp=1702742656~hmac=024639b754bd93b43f788fd5a05ac138765c79500d7f73e11c75fe765a9c3e99"); /* Replace with your desired image */
     padding: 20px;
     border-radius: 5px;
   }
