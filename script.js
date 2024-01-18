@@ -3,6 +3,8 @@ let currentWord = words[Math.floor(Math.random() * words.length)];
 let hiddenWord = currentWord.replace(/./g, "_");
 let chancesRemaining = 5;
 
+const toggle = document.getElementById('toggle')
+const nav = document.getElementById('nav')
 const hiddenWordElement = document.getElementById("hidden-word");
 const chancesElement = document.getElementById("chances");
 const feedbackElement = document.getElementById("feedback");
@@ -11,6 +13,10 @@ const guessBtn = document.getElementById("guess-btn");
 const textEl = document.getElementById('text');
 const text = 'Word Guessing Game 😸';
 const wordLengthElement = document.getElementById("word-length-value");
+
+//navigation bar
+toggle.addEventListener('click', () => nav.classList.toggle('active'))
+
 
 wordLengthElement.textContent = currentWord.length;
 //for guess btn
