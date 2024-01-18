@@ -1,10 +1,10 @@
 const words = ["apple", "banana", "computer", "subodh", "ocean", "elephant", "sunshine", "boss", "riya", "khwopa"];
 let currentWord = words[Math.floor(Math.random() * words.length)];
-let hiddenWord = currentWord.replace(/./g, "_");
+let hiddenWord = currentWord.slice(0, 3) + currentWord.slice(3).replace(/./g, "_"); // Display first 2-3 letters and replace the rest with underscores
 let chancesRemaining = 5;
 
-const toggle = document.getElementById('toggle')
-const nav = document.getElementById('nav')
+const toggle = document.getElementById('toggle');
+const nav = document.getElementById('nav');
 const hiddenWordElement = document.getElementById("hidden-word");
 const chancesElement = document.getElementById("chances");
 const feedbackElement = document.getElementById("feedback");
@@ -15,10 +15,10 @@ const text = 'Word Guessing Game 😸';
 const wordLengthElement = document.getElementById("word-length-value");
 
 //navigation bar
-toggle.addEventListener('click', () => nav.classList.toggle('active'))
-
+toggle.addEventListener('click', () => nav.classList.toggle('active'));
 
 wordLengthElement.textContent = currentWord.length;
+
 //for guess btn
 guessBtn.addEventListener("click", processGuess);
 letterInput.addEventListener("keyup", (event) => {
@@ -64,7 +64,8 @@ function processGuess() {
     createCircleAnimation(guessBtn);
   }
 }
-//idk cpioed form chatgpt 
+
+//idk copied from chatgpt
 function disableGame() {
   guessBtn.disabled = true;
   letterInput.disabled = true;
@@ -81,21 +82,21 @@ chancesElement.textContent = `Chances remaining: ${chancesRemaining}`;
 let idx = 0;
 
 function writeText() {
-    textEl.textContent = text.slice(0, idx);
-    idx++;
+  textEl.textContent = text.slice(0, idx);
+  idx++;
 
-    if (idx <= text.length) {
-        setTimeout(writeText, 300);
-    }
+  if (idx <= text.length) {
+    setTimeout(writeText, 300);
+  }
 }
 
 writeText();
- 
+
 // for retry 
 var retryBtn = document.getElementById('retry-btn');
 
-    // Add a click event listener to the button
-    retryBtn.addEventListener('click', function() {
-        // Refresh the page when the button is clicked
-        location.reload();
-    });
+// Add a click event listener to the button
+retryBtn.addEventListener('click', function () {
+  // Refresh the page when the button is clicked
+  location.reload();
+});
