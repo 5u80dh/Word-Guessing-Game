@@ -130,9 +130,9 @@ h1 {
 }
 
 #chances {
-  font-weight: bold;
+
   margin-top: 10px;
-  color: #ffffff; /* Set text color */
+  color: #ffffff; 
 }
 
 #letter-input {
@@ -148,7 +148,7 @@ h1 {
 #feedback {
   font-weight: bold;
   margin-top: 10px;
-  color: #ffffff; /* Set text color */
+  color: #ffffff; 
 }
 
 .correct {
