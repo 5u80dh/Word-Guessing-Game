@@ -65,7 +65,7 @@ function processGuess() {
   }
 }
 
-//idk copied from chatgpt
+//for making bottn unclickable after chance finish
 function disableGame() {
   guessBtn.disabled = true;
   letterInput.disabled = true;
@@ -78,7 +78,6 @@ String.prototype.replaceAt = function (index, replacement) {
 hiddenWordElement.textContent = hiddenWord;
 chancesElement.textContent = `Chances remaining: ${chancesRemaining}`;
 
-// auto text code below:
 let idx = 0;
 
 function writeText() {
@@ -95,8 +94,7 @@ writeText();
 // for retry 
 var retryBtn = document.getElementById('retry-btn');
 
-// Add a click event listener to the button
+// retry
 retryBtn.addEventListener('click', function () {
-  // Refresh the page when the button is clicked
   location.reload();
 });
