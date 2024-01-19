@@ -150,6 +150,12 @@ h1 {
   margin-top: 10px;
   color: #ffffff; 
 }
+#word-length
+{
+  font-weight: bold;
+  margin-top: 10px;
+  color: #ffffff; 
+}
 
 .correct {
   color: green;
