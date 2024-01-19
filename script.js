@@ -1,4 +1,4 @@
-const words = ["apple", "banana", "computer", "subodh", "ocean", "elephant", "sunshine", "boss", "riya", "khwopa"];
+const words = ["apple", "banana", "computer", "subodh", "ocean", "elephant", "sunshine", "boss", "khwopa"];
 let currentWord = words[Math.floor(Math.random() * words.length)];
 let hiddenWord = currentWord.slice(0, 3) + currentWord.slice(3).replace(/./g, "_"); // Display first 2-3 letters and replace the rest with underscores
 let chancesRemaining = 5;
