@@ -21,18 +21,18 @@ header {
 
 #nav {
   background-color: #ffffff;
-  padding: 5px; /* Increased padding */
-  width: 50px;
+  padding: 0px; /* Increased padding */
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px; /* Increased border-radius */
+  border-radius: 4px; /* Increased border-radius */
   transition: width 0.6s linear;
   overflow-x: hidden;
 }
 
 #nav.active {
-  width: 350px;
+  width: 150px;
 }
 
 #nav ul {
@@ -147,7 +147,7 @@ h1 {
 #feedback {
   font-weight: bold;
   margin-top: 10px;
-  color: #fff; /* Set text color */
+  color: #030303; /* Set text color */
 }
 
 .correct {
@@ -160,22 +160,18 @@ h1 {
 
 button {
   background-color: purple;
-  color: #fff;
+  color: #000000;
   border: 1px purple solid;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 20px 30px;
+  letter-spacing: 1px;
+  padding: 20px 10px;
   overflow: hidden;
   margin: 10px 0;
   position: relative;
 }
 
-#guess-btn:focus {
-  outline: none;
-  transform: translate(-50%, -50%) scale(0);
-  animation: scale 0.5s ease-out;
-}
+
 
 @keyframes scale {
   to {
