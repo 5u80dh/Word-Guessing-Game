@@ -141,13 +141,13 @@ h1 {
   border-radius: 5px;
   width: 150px;
   text-align: center;
-  color: #fff; /* Set text color */
+  color: #000000; 
 }
 
 #feedback {
   font-weight: bold;
   margin-top: 10px;
-  color: #030303; /* Set text color */
+  color: #bca7a7; 
 }
 
 .correct {
