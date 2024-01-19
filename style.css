@@ -13,7 +13,7 @@ body {
 header {
   background-color: #ffffff;
   color: #fff;
-  padding: 15px; /* Increased padding */
+  padding: 15px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,12 +21,12 @@ header {
 
 #nav {
   background-color: #ffffff;
-  padding: 4px; /* Increased padding */
+  padding: 4px; 
   width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px; /* Increased border-radius */
+  border-radius: 4px; 
   transition: width 0.6s linear;
   overflow-x: hidden;
 }
@@ -121,12 +121,12 @@ h1 {
   padding: 20px;
   border-radius: 5px;
   background-color: #221e1e;
-  margin: 20px; /* Increased margin */
+  margin: 20px; 
 }
 
 #hidden-word {
   font-size: 1.5em;
-  color: #fff; /* Set text color */
+  color: #fff; 
 }
 
 #chances {
@@ -137,17 +137,17 @@ h1 {
 #letter-input {
   font-size: 2em;
   padding: 10px;
-  border: 1px solid #040000;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   width: 150px;
   text-align: center;
-  color: #000000; /* Set text color */
+  color: #000000; 
 }
 
 #feedback {
   font-weight: bold;
   margin-top: 10px;
-  color: #030303; /* Set text color */
+  color: #ffffff; /* Set text color */
 }
 
 .correct {
