@@ -1,37 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Word Guess!</title>
-  <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<header>
- <h1 id="text">Starting...</h1> 
- <nav class="active" id="nav">
-      <ul>
-        <li><a href="https://5u80dh.github.io/Word-Guessing-Game/#">Game</a></li>
-        <li><a href="https://5u80dh.github.io/Word-Guessing-Game/about.html">About</a></li>
-      </ul>
-      <button class="icon" id="toggle">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-      </button>
-    </nav>
-    
-</header>
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordWhiz Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function about() {
+        var div = document.getElementById("about");
+        div.style.display = div.style.display === "none" ? "grid" : "none";
+        about.style.zIndex = about.style.display === "none" ? "0" : "1000";
+      }
 
-  <div id="game-board">
-    <p id="hidden-word">_ _ _ _ _</p>
-    <p id="chances">Chances remaining: 5</p>
-    <input type="text" id="letter-input" maxlength="1">
-    <p id="word-length">Word Length: <span id="word-length-value">0</span></p>
-    <button id="guess-btn">Guess!</button>
-    <button id="retry-btn">Retry!</button>
-    <p id="feedback"></p>
-  </div>
-  <script src="script.js"></script>
-</body>
+      function contact() {
+        var div = document.getElementById("contact");
+        div.style.display = div.style.display === "none" ? "grid" : "none";
+        contact.style.zIndex = contact.style.display === "none" ? "0" : "1000";
+      }
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 id="text">Starting...</h1>
+      <nav class="active" id="nav">
+        <ul>
+          <li>
+            <a id="t-b" onclick="contact()">Contact </a>
+          </li>
+          <li>
+            <a id="t-b" onclick="about()"> About </a>
+          </li>
+        </ul>
+        <button class="icon" id="toggle">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </button>
+      </nav>
+    </header>
+
+
+    <div id="about">
+      <h2>About Our Project: GuessMaster</h2>
+
+      <p>
+        Welcome to <strong>GuessMaster</strong>, an innovative initiative that
+        aims to increase your creativity. At
+        <strong>KHWOPA HIGHER SECONDARY School</strong>, we believe in fostering
+        creativity, collaboration, and learning beyond the classroom. This
+        project is a testament to our commitment to providing students with
+        opportunities to explore, create, and make a positive impact on the
+        world.
+      </p>
+
+      <h3>Project Overview:</h3>
+
+      <p>
+        <strong>GuessMaster</strong> is a Word-Guessing-Game by one one letter.
+        Our goal is to help you learn new things and new letters. Through this
+        project, students have the chance to enjoy as well as learn new
+        vocublary.
+      </p>
+
+      <p>
+        Thank you for your interest in <strong>GuessMaster</strong>. Together,
+        let's create a learning experience that goes beyond textbooks and
+        classrooms!
+      </p>
+      <p>This is just a sample we aim to add more in this project with time</p>
+    </div>
+    <div id="contact">
+      <ul>
+        <li>
+          <a class="facebook" href="/">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <i class=" fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="/">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class=" instagram" href="/">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="game-board">
+      <p id="hidden-word"></p>
+
+      <div id="simple-an">
+        <input type="text" id="letter-input" maxlength="1" />
+        <label id="word-length"
+          >Word Length: <span id="word-length-value">0</span></label
+        >
+      </div>
+
+      <div id="fb">
+        <p id="chances">Chances remaining:5</p>
+        <p id="feedback"></p>
+      </div>
+
+      <div class="button">
+        <button id="guess-btn">Guess</button>
+        <button id="retry-btn">Retry</button>
+      </div>
+    </div>
+    <footer>
+      <div class="cop">Copyright © 2017 All Rights Reserved by Ytc Musk.</div>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
