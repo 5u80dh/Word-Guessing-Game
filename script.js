@@ -11,7 +11,7 @@ const feedbackElement = document.getElementById("feedback");
 const letterInput = document.getElementById("letter-input");
 const guessBtn = document.getElementById("guess-btn");
 const textEl = document.getElementById('text');
-const text = 'Word Guessing Game 😸';
+const text = 'Word Guessing Game😸';
 const wordLengthElement = document.getElementById("word-length-value");
 
 //navigation bar
