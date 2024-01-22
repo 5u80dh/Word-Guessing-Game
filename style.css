@@ -22,6 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   background: url(buildings.png) center/cover;
+  background-color: #080808;
 }
 
 header {
@@ -39,7 +40,7 @@ header {
 
 #nav {
   backdrop-filter: blur(30px);
-  color: #ffffff;
+  color: rgba(255, 243, 243, 0);
   padding: 4px;
   display: flex;
   align-items: center;
@@ -85,14 +86,15 @@ header {
 }
 
 .icon {
-  font-family: var(--poppins);
-  color: black;
+  background-color: rgba(0, 0, 0, 0);
   border: 0;
   cursor: pointer;
   padding: 0;
   position: relative;
   height: 30px;
   width: 30px;
+
+  
 }
 
 .icon:focus {
@@ -100,17 +102,16 @@ header {
 }
 
 .icon .line {
-  color: black;
+  background-color: #5290f9;
   height: 2px;
   width: 20px;
   position: absolute;
   top: 10px;
-  left: 3px;
+  left: 5px;
   transition: transform 0.6s linear;
 }
 
 .icon .line2 {
-  color: black;
   top: auto;
   bottom: 10px;
 }
@@ -139,7 +140,7 @@ h1 {
   width: min(400px, 100%);
   box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 10;
-  color: #ffffff;
+  color: #000000;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -209,7 +210,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 10px;
-  padding: 10px;
+  padding: 0px;
   border: none;
   border-radius: 50px;
 }
@@ -409,7 +410,7 @@ ul li a:hover:nth-child(4) {
 .cop{
   align-items: center;
   justify-content: center;
-  margin: 102px;
+  margin: -130px;
 }
 
 
