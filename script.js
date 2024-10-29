@@ -8,7 +8,7 @@ const words = [
   "sunshine",
   "boss",
   "khwopa",
-  "Dilasha"
+  "Dilasha",
   "Prakriti",
 ];
 let currentWord = words[Math.floor(Math.random() * words.length)];
