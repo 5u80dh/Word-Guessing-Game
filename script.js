@@ -8,7 +8,8 @@ const words = [
   "sunshine",
   "boss",
   "khwopa",
-  "Supriya",
+  "Dilasha"
+  "Prakriti",
 ];
 let currentWord = words[Math.floor(Math.random() * words.length)];
 let hiddenWord =
